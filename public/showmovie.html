@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aardvark Movie List</title>
+	<meta charset="UTF-8"> 
+        <!-- seo optimization -->
+
+		    <meta name="keywords" content="movies, genre, action">
+
+		    <!-- refresh docs -->
+
+		    <meta http-equiv="refresh" content="120">
+
+		    <!-- for responsive -->
+		 
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- link to external css file -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+        <!-- linking to bootstrap -->
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+        <!-- js -->
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<div class="container-fluid gridContainer">
+		<div id="y">
+			 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="../index.html">
+  	 
+  	 <img src="../images/mortal.png" alt="Aardvark" height="40" style="background-color: white;">
+
+
+  </a>
+  <!-- responsive menu -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="uploadMovie.html" style="color: white;">Upload Movie <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Show Movies</a>
+      </li>
+<!--       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> --> 
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;" >Admin</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="usermanagement.html" style="color: white; ">User Management</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="#" method="post">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<br>
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-2">
+				<img src="../images/mortal.png" alt="Delta Movies" width="40" height="40" style="margin-bottom: 10px; margin: auto; display: block; margin-top: 10px;">
+
+				<p style="text-align: center; font-size: 16px; padding: 5px;" class="lead" >
+					<b>Filter Table</b>
+				</p>
+					 <!-- A vertical navbar -->
+	<nav style="margin: 20px;" class="navbar bg-dark">
+
+	  <!-- Links -->
+	  <ul class="navbar-nav">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Filter by Genre</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Filter by Price</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#">Filter by Availability</a>
+	    </li>
+	      <li class="nav-item">
+	      <a class="nav-link" href="#">New Movies Uploaded</a><span class="badge badge-danger">10</span>
+	    </li>
+	      <li class="nav-item">
+	      <a class="nav-link" href="#">Unread Messages<span class="badge badge-danger">10</span></a>
+	    </li>
+	      <li class="nav-item">
+	      <a class="nav-link" href="#">Rented Movies<span class="badge badge-danger">1000</span></a>
+	    </li>
+	  </ul>
+
+	</nav> 
+			</div>
+
+			<div class="col-sm-10">
+				
+                 <!-- movie table  -->
+                 <table class="table table-hover table-responsive">
+                 	<tr class="thead-dark">
+                 		<th>Movie ID</th>
+                 		<th>Movie Name</th>
+                 		<th>Purchase Price</th>
+                 		<th>Availabilty</th>
+                 		<th>Movie Poster</th>
+                 		<th>Movie Genre</th>
+                 		<th colspan="2">Action</th>
+
+                 	</tr>
+
+                 	<tr>
+
+                 		<td>1</td>
+                 	    <td>Avengers EndGame</td>
+                 	    <td>1200KES</td>
+                 	    <td>yes</td>
+                 	    <td>
+                 	    	<img src="../images/avengers.jpg" alt="avengers" width="60" height="60">
+                 	    </td>
+                 	    <td>Action/Thriller</td>
+                 	    <td>
+                 	    	<button type="button" class="btn btn-warning">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                 	    </td>
+
+                 	</tr>
+
+
+
+                 	<tr>
+
+                 		<td>2</td>
+                 	    <td>Avengers Infinity War</td>
+                 	    <td>1000KES</td>
+                 	    <td>no</td>
+                 	    <td>
+                 	    	                 	    	<img src="../images/avengers.jpg" alt="avengers" width="60" height="60">
+
+                 	    </td>
+                 	    <td>
+                 	    	Action/Thriller
+                 	    </td>
+                 	    <td>
+                 	    	<button type="button" class="btn btn-warning">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                 	    </td>
+                 	    	
+                 	</tr>
+
+
+                 </table>
+
+                  <ul class="pagination">
+					  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+					  <li class="page-item"><a class="page-link" href="#">1</a></li>
+					  <li class="page-item"><a class="page-link" href="#">2</a></li>
+					  <li class="page-item"><a class="page-link" href="#">3</a></li>
+					  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+					</ul> 
+								</div>
+			
+		</div>
+		
+	</div>
+
+
+
+	<div class="container">
+
+		<div class="jumbotron" style="background-color: white;">
+			<div class="container">
+							<p class="lead alert-success" style="text-align: center; padding: 10px; ">
+				
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+			</p>
+			</div>
+
+
+			<div class="container">
+				<div class="btn-group">
+					<button class="btn btn-primary btn-lg"></button>
+					<button class="btn btn-success btn-lg" ></button>
+					<button class="btn btn-dark btn-lg"></button>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>

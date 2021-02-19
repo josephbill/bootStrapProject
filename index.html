@@ -9,7 +9,7 @@
 
 		    <!-- refresh docs -->
 
-		<meta http-equiv="refresh" content="30">
+		<meta http-equiv="refresh" content="600">
 
 		<!-- for responsive -->
 		 
@@ -18,16 +18,19 @@
 
         <!-- link to external css file -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- linking to bootstrap -->
         <!-- css -->
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+ <!--        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.min.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
         <!-- js -->
-        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!--         <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
 		<!--        <-- Latest compiled and minified CSS -->
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		 -->
@@ -65,7 +68,7 @@
         <a class="nav-link" href="public/uploadMovie.html" style="color: white;">Upload Movie <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style="color: white;">Show Movies</a>
+        <a class="nav-link" href="public/showmovie.html" style="color: white;">Show Movies</a>
       </li>
 <!--       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,7 +85,7 @@
         <a class="nav-link" href="#" style="color: white;" >Admin</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#" style="color: white;">User Management</a>
+        <a class="nav-link" href="public/usermanagement.html" style="color: white;">User Management</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" action="#" method="post">
@@ -92,6 +95,39 @@
   </div>
 </nav>
 
+
+<!-- carousel -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/avenge.jpg" style="background-size: cover; margin: auto; display: block; margin-top: 10px; margin-bottom: 10px; height: 200px;" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="images/netflix.jpg" style="background-size: cover; margin: auto; display: block; margin-top: 10px; margin-bottom: 10px; height: 200px;" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="images/multi.jpg" style="background-size: cover; margin: auto; display: block; margin-top: 10px; margin-bottom: 10px; height: 200px;" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
 
 
 		</div>
@@ -107,9 +143,29 @@
 
         	<img src="images/mortal.png" class="float-left" width="40" height="40">
             <div style="justify-content: space-around;">
-            		<img src="images/twitter.png" width="40" height="40" style="display: inline-block; margin-left: 10px;">
-        	        	<img src="images/email.png" width="40" height="40" style="display: inline-block;">
-        	<img src="images/messenger.png" width="40" height="40" style="display: inline-block;">
+              <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter.png/" width="40" height="40" style="display: inline-block; margin-left: 10px;">
+              </a>
+               <!-- email link -->
+         <!--      <a href="mailto:aardvark@gmail.com?subject=Rent a movie or buy a movie&body=content">
+                       <!--              <img src="images/email.png" width="40" height="40" style="display: inline-block;"> -->
+ 
+ <i class="fas fa-cloud"></i>
+<!--               </a>
+ -->
+              <a href="https://facebook.com/">
+                          <img src="images/messenger.png" width="40" height="40" style="display: inline-block;">
+
+              </a>
+              <!-- sms -->
+              <a href="sms:0798501653?body=i want to rent....">
+                            <img src="images/sms.png" width="40" height="40" style="display: inline-block;">
+
+              </a>
+              <!-- telephone -->
+              <a href="tel:0798501653">
+                 <img src="images/call.png" width="40" height="40" style="display: inline-block;">
+              </a>
             </div>
 
 
